@@ -1,23 +1,13 @@
 import React, { Component } from 'react';
 
-// class App extends Component {
-//   render() {
-//     return (
-//       <div>
-//           Hello, World!!
-//       </div>
-//     );
-//   }
-// }
-
 class App extends Component {
   render() {
-    return (
-      <h1>
-        Hello, World!!!!
-      </h1>
+    return(
+      <React.Fragment>
+        <label htmlFor="bar">bar</label>
+      <input type="text" onChange={ () => {console.log("test")}} />
+      </React.Fragment>
     );
-
   }
 }
 
